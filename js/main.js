@@ -8,6 +8,12 @@ function last(array) {
 
 $(function() {
     var addressInput = $('.m-address');
+    var ipInput = $('.m-ip');
+    var houseIdInput = $('.m-house-id');
+
+    $.get('http://www.teliza.com/ip', function (ip) {
+        ipInput.val(ip);
+    });
 
     addressInput.autocomplete({
         source: function(request, response) {
@@ -18,12 +24,7 @@ $(function() {
             var url = ui.item.url;
             var id = last(url.split('/'));
             log(id);
+            houseIdInput.val(id);
         }
     });
-
-
-    /*addressInput.on('input', function () {
-       var term = addressInput.val();
-       log(autocompleteUrl(term));
-    });*/
 });
