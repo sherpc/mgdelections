@@ -11,8 +11,9 @@ $(function() {
     var ipInput = $('.m-ip');
     var houseIdInput = $('.m-house-id');
 
-    $.get('http://www.teliza.com/ip', function (ip) {
-        ipInput.val(ip);
+    $.get('http://freegeoip.net/json/', function (data) {
+        log(data);
+        ipInput.val(data.ip);
     });
 
     addressInput.autocomplete({
