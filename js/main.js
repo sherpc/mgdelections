@@ -33,7 +33,7 @@ $(function() {
     var addressInput = $('.m-address');
 
     addressInput.autocomplete({
-        source: availableTags
+        source: 'http://dom.mos.ru/Lookups/GetAddressAutoComplete'
     });
 
     /*addressInput.on('input', function () {
