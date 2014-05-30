@@ -1,40 +1,26 @@
 function log (data) { console.log(data); }
 
-function autocompleteUrl(term) {
-    return 'http://dom.mos.ru/Lookups/GetAddressAutoComplete?term=' + encodeURIComponent(term);
+function last(array) {
+    if (array.length)
+        return array[array.length - 1];
+    throw 'Array is empty!';
 }
-
-var availableTags = [
-    "ActionScript",
-    "AppleScript",
-    "Asp",
-    "BASIC",
-    "C",
-    "C++",
-    "Clojure",
-    "COBOL",
-    "ColdFusion",
-    "Erlang",
-    "Fortran",
-    "Groovy",
-    "Haskell",
-    "Java",
-    "JavaScript",
-    "Lisp",
-    "Perl",
-    "PHP",
-    "Python",
-    "Ruby",
-    "Scala",
-    "Scheme"
-];
 
 $(function() {
     var addressInput = $('.m-address');
 
     addressInput.autocomplete({
-        source: 'http://dom.mos.ru/Lookups/GetAddressAutoComplete'
+        source: function(request, response) {
+            var results = $.ui.autocomplete.filter(houses, request.term);
+            response(results.slice(0, 10));
+        },
+        select: function( event, ui ) {
+            var url = ui.item.url;
+            var id = last(url.split('/'));
+            log(id);
+        }
     });
+
 
     /*addressInput.on('input', function () {
        var term = addressInput.val();
