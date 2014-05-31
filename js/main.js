@@ -12,7 +12,6 @@ $(function() {
     var houseIdInput = $('.m-house-id');
 
     $.get('http://freegeoip.net/json/', function (data) {
-        log(data);
         ipInput.val(data.ip);
     });
 
@@ -24,7 +23,6 @@ $(function() {
         select: function( event, ui ) {
             var url = ui.item.url;
             var id = last(url.split('/'));
-            log(id);
             houseIdInput.val(id);
         }
     });
