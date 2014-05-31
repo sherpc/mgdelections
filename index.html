@@ -31,6 +31,12 @@
          * Copyright (c) Ryan Seddon | Licensed MIT
          */
 
+        var formKey = '15on5fbYKt3juKfFui76lBGnJsxNlfErZgWBCtgkqSb4';
+        var formID = 'ss-form';
+        var labelName = 'ssTestLabel';
+        var testField = 'ssTestValue';
+        var submitted = false;
+
         (function (e, t) {
             "function" == typeof define && define.amd ? define(t) : e.H5F = t()
         })(this, function () {
@@ -434,7 +440,9 @@
         <tbody>
         <tr>
             <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-                <input type="submit" name="continue" value="Continue »" id="ss-submit"></td>
+                <label id="ssTestLabel" for="ssTestValue"></label>
+                <input type="text" name="ssTestValue" value="" id="ssTestValue" />
+                <input type="submit" name="continue" value="Продолжить »" id="ss-submit"></td>
         </tr>
         </tbody>
     </table>

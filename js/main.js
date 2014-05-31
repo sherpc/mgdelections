@@ -26,4 +26,19 @@ $(function() {
             houseIdInput.val(id);
         }
     });
+
+    var ssForm = $('#'+formID);
+
+    var randomInt = Math.floor((Math.random()*100)+1);
+    $('#'+labelName).text('Если вы человек, введите ' + randomInt + ':');
+
+    ssForm.submit(function(evt){
+        if($('#'+testField).val() == randomInt){
+            ssForm.attr({'action' : 'https://docs.google.com/forms/d/' + formKey + '/formResponse'});
+            return true;
+        }else{
+            alert('Введите число "' + randomInt + '"');
+            return false;
+        }
+    });
 });
