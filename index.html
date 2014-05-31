@@ -203,7 +203,7 @@
                 </label></li>
             </ul>
             <div class="error-message"></div>
-            <div class="required-message">This is a required question</div>
+            <div class="required-message">Этот вопрос обязателен</div>
         </div>
     </div>
 </div>
@@ -221,7 +221,7 @@
                    required="" title="">
 
             <div class="error-message"></div>
-            <div class="required-message">This is a required question</div>
+            <div class="required-message">Этот вопрос обязателен</div>
         </div>
     </div>
 </div>
@@ -239,7 +239,7 @@
                    aria-required="true" required="" title="Неправильный email" aria-invalid="true">
 
             <div class="error-message">Неправильный email</div>
-            <div class="required-message">This is a required question</div>
+            <div class="required-message">Этот вопрос обязателен</div>
         </div>
     </div>
 </div>
@@ -247,19 +247,19 @@
     <div dir="ltr" class="ss-item ss-item-required ss-text">
         <div class="ss-form-entry">
             <label class="ss-q-item-label" for="entry_1173341302">
-                <div class="ss-q-title">Телефон
+                <div class="ss-q-title">Телефон в формате 9012223344
                     <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
                     <span class="ss-required-asterisk">*</span></div>
                 <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
             </label>
             <input type="text" name="entry.1173341302" value="" class="ss-q-short required"
                    id="entry_1173341302" dir="auto"
-                   aria-label="Телефон  Телефон в формате 79012223344" aria-required="true"
-                   required="" pattern="\d{11}" title="Телефон в формате 79012223344"
+                   aria-label="Телефон  Телефон в формате 9012223344" aria-required="true"
+                   required="" title="Телефон в формате 9012223344"
                    aria-invalid="true">
 
-            <div class="error-message">Телефон в формате 79012223344</div>
-            <div class="required-message">This is a required question</div>
+            <div class="error-message">Телефон в формате 9012223344</div>
+            <div class="required-message">Этот вопрос обязателен</div>
         </div>
     </div>
 </div>
@@ -281,7 +281,7 @@
                    required="" title="" style="width: 100%;">
 
             <div class="error-message"></div>
-            <div class="required-message">This is a required question</div>
+            <div class="required-message">Этот вопрос обязателен</div>
         </div>
     </div>
 </div>
@@ -298,53 +298,30 @@
                 <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
                         type="checkbox" name="entry.104667956" value="Моего адреса нету в списке" id="group_104667956_1"
                         role="checkbox" class="ss-q-checkbox"></span>
-                    <span class="ss-choice-label">Моего адреса нету в списке</span>
+                    <span class="ss-choice-label">Моего адреса нет в списке</span>
                 </label></li>
             </ul>
             <div class="error-message"></div>
-            <div class="required-message">This is a required question</div>
+            <div class="required-message">Этот вопрос обязателен</div>
         </div>
     </div>
 </div>
 
 <div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="ltr" class="ss-item ss-item-required ss-radio">
+    <div dir="ltr" class="ss-item ss-item-required ss-checkbox">
         <div class="ss-form-entry">
             <label class="ss-q-item-label" for="entry_1113723343">
-                <div class="ss-q-title">Я даю своё согласие на обработку моих персональных данных, а
-                    также гарантирую достоверность всех предоставленных данных (согласно
-                    Федеральному закону от 27.07.2006 г. №152-Ф3 "О персональных данных").
-                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-                    <span class="ss-required-asterisk">*</span></div>
+                <div class="ss-q-title">
+                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label></div>
                 <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
             </label>
 
-            <ul class="ss-choices" role="radiogroup"
-                aria-label="Я даю своё согласие на обработку моих персональных данных, а также гарантирую достоверность всех предоставленных данных (согласно Федеральному закону от 27.07.2006 г. №152-Ф3 &quot;О персональных данных&quot;).  ">
-                <li class="ss-choice-item"><label><span
-                        class="ss-choice-item-control goog-inline-block"><input type="radio"
-                                                                                name="entry.1828802406"
-                                                                                value="Да"
-                                                                                checked
-                                                                                id="group_1828802406_1"
-                                                                                role="radio"
-                                                                                class="ss-q-radio"
-                                                                                aria-label="Да"
-                                                                                required=""
-                                                                                aria-required="true"></span>
-                    <span class="ss-choice-label">Да</span>
-                </label></li>
-                <li class="ss-choice-item"><label><span
-                        class="ss-choice-item-control goog-inline-block"><input type="radio"
-                                                                                name="entry.1828802406"
-                                                                                value="Нет"
-                                                                                id="group_1828802406_2"
-                                                                                role="radio"
-                                                                                class="ss-q-radio"
-                                                                                aria-label="Нет"
-                                                                                required=""
-                                                                                aria-required="true"></span>
-                    <span class="ss-choice-label">Нет</span>
+            <ul class="ss-choices ss-choices-required" role="group" aria-label="  ">
+                <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                        type="checkbox" name="entry.1828802406"
+                        value="Я даю своё согласие на обработку моих персональных данных, а также гарантирую достоверность всех предоставленных данных (согласно Федеральному закону от 27.07.2006 г. №152-Ф3 &quot;О персональных данных&quot;)."
+                        id="group_1828802406_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                    <span class="ss-choice-label">Я даю своё согласие на обработку моих персональных данных, а также гарантирую достоверность всех предоставленных данных (согласно Федеральному закону от 27.07.2006 г. №152-Ф3 "О персональных данных").</span>
                 </label></li>
             </ul>
             <div class="error-message"></div>
@@ -368,10 +345,9 @@
                         class="ss-choice-item-control goog-inline-block"><input type="radio"
                                                                                 name="entry.1424709176"
                                                                                 value="Да"
-                                                                                checked
                                                                                 id="group_1424709176_1"
                                                                                 role="radio"
-                                                                                class="ss-q-radio"
+                                                                                class="ss-q-radio m-show-help-button"
                                                                                 aria-label="Да"
                                                                                 required=""
                                                                                 aria-required="true"></span>
@@ -383,7 +359,7 @@
                                                                                 value="Нет"
                                                                                 id="group_1424709176_2"
                                                                                 role="radio"
-                                                                                class="ss-q-radio"
+                                                                                class="ss-q-radio m-hide-help-button"
                                                                                 aria-label="Нет"
                                                                                 required=""
                                                                                 aria-required="true"></span>
@@ -391,10 +367,180 @@
                 </label></li>
             </ul>
             <div class="error-message"></div>
-            <div class="required-message">This is a required question</div>
+            <div class="required-message">Этот вопрос обязателен</div>
         </div>
     </div>
 </div>
+
+<div class="m-help-questions" style="display: none;">
+    <div class="ss-form-question errorbox-good" role="listitem">
+        <div dir="ltr" class="ss-item ss-item-required ss-checkbox">
+            <div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_809792830">
+                    <div class="ss-q-title">Где (у кого) Вы можете помочь собрать подписи?
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                        <span class="ss-required-asterisk">*</span></div>
+                    <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                </label>
+
+                <ul class="ss-choices ss-choices-required" role="group"
+                    aria-label="Где (у кого) Вы можете помочь собрать подписи?  ">
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="checkbox" name="entry.1170059764" value="у родственников и знакомых"
+                            id="group_1170059764_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                        <span class="ss-choice-label">у родственников и знакомых</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="checkbox" name="entry.1170059764" value="в своем подъезде" id="group_1170059764_2"
+                            role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                        <span class="ss-choice-label">в своем подъезде</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="checkbox" name="entry.1170059764" value="в своем доме" id="group_1170059764_3"
+                            role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                        <span class="ss-choice-label">в своем доме</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="checkbox" name="entry.1170059764" value="в нескольких домах" id="group_1170059764_4"
+                            role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                        <span class="ss-choice-label">в нескольких домах</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="checkbox" name="entry.1170059764" value="в любом квартале района" id="group_1170059764_5"
+                            role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                        <span class="ss-choice-label">в любом квартале района</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="checkbox" name="entry.1170059764" value="в любом районе округа" id="group_1170059764_6"
+                            role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                        <span class="ss-choice-label">в любом районе округа</span>
+                    </label></li>
+                </ul>
+                <div class="error-message"></div>
+                <div class="required-message">This is a required question</div>
+            </div>
+        </div>
+    </div>
+    <div class="ss-form-question errorbox-good" role="listitem">
+        <div dir="ltr" class="ss-item ss-item-required ss-radio">
+            <div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_2113372613">
+                    <div class="ss-q-title">Сколько времени в день Вы готовы потратить на сбор подписей?
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                        <span class="ss-required-asterisk">*</span></div>
+                    <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                </label>
+
+                <ul class="ss-choices" role="radiogroup"
+                    aria-label="Сколько времени в день Вы готовы потратить на сбор подписей?  ">
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.1794707403" value="полный рабочий день" id="group_1794707403_1"
+                            role="radio" class="ss-q-radio" aria-label="полный рабочий день" required=""
+                            aria-required="true"></span>
+                        <span class="ss-choice-label">полный рабочий день</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.1794707403" value="1 час" id="group_1794707403_2" role="radio"
+                            class="ss-q-radio" aria-label="1 час" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">1 час</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.1794707403" value="2 часа" id="group_1794707403_3" role="radio"
+                            class="ss-q-radio" aria-label="2 часа" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">2 часа</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.1794707403" value="3 часа" id="group_1794707403_4" role="radio"
+                            class="ss-q-radio" aria-label="3 часа" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">3 часа</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.1794707403" value="4 часа" id="group_1794707403_5" role="radio"
+                            class="ss-q-radio" aria-label="4 часа" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">4 часа</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.1794707403" value="5&nbsp;часов" id="group_1794707403_6" role="radio"
+                            class="ss-q-radio" aria-label="5&nbsp;часов" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">5&nbsp;часов</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.1794707403" value="6&nbsp;часов" id="group_1794707403_7" role="radio"
+                            class="ss-q-radio" aria-label="6&nbsp;часов" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">6&nbsp;часов</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.1794707403" value="7&nbsp;часов" id="group_1794707403_8" role="radio"
+                            class="ss-q-radio" aria-label="7&nbsp;часов" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">7&nbsp;часов</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.1794707403" value="8&nbsp;часов" id="group_1794707403_9" role="radio"
+                            class="ss-q-radio" aria-label="8&nbsp;часов" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">8&nbsp;часов</span>
+                    </label></li>
+                </ul>
+                <div class="error-message"></div>
+                <div class="required-message">This is a required question</div>
+            </div>
+        </div>
+    </div>
+    <div class="ss-form-question errorbox-good" role="listitem">
+        <div dir="ltr" class="ss-item ss-item-required ss-radio">
+            <div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1055234327">
+                    <div class="ss-q-title">Сколько дней в неделю Вы готовы потратить на сбор подписей?
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                        <span class="ss-required-asterisk">*</span></div>
+                    <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                </label>
+
+                <ul class="ss-choices" role="radiogroup"
+                    aria-label="Сколько дней в неделю Вы готовы потратить на сбор подписей?  ">
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.7103332" value="1 день" id="group_7103332_1" role="radio"
+                            class="ss-q-radio" aria-label="1 день" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">1 день</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.7103332" value="2 дня" id="group_7103332_2" role="radio"
+                            class="ss-q-radio" aria-label="2 дня" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">2 дня</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.7103332" value="3&nbsp;дня" id="group_7103332_3" role="radio"
+                            class="ss-q-radio" aria-label="3&nbsp;дня" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">3&nbsp;дня</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.7103332" value="4&nbsp;дня" id="group_7103332_4" role="radio"
+                            class="ss-q-radio" aria-label="4&nbsp;дня" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">4&nbsp;дня</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.7103332" value="5&nbsp;дней" id="group_7103332_5" role="radio"
+                            class="ss-q-radio" aria-label="5&nbsp;дней" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">5&nbsp;дней</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.7103332" value="6&nbsp;дней" id="group_7103332_6" role="radio"
+                            class="ss-q-radio" aria-label="6&nbsp;дней" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">6&nbsp;дней</span>
+                    </label></li>
+                    <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input
+                            type="radio" name="entry.7103332" value="7 дней" id="group_7103332_7" role="radio"
+                            class="ss-q-radio" aria-label="7 дней" required="" aria-required="true"></span>
+                        <span class="ss-choice-label">7 дней</span>
+                    </label></li>
+                </ul>
+                <div class="error-message"></div>
+                <div class="required-message">This is a required question</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="ss-form-question errorbox-good" style="display: none;" role="listitem">
     <div dir="ltr" class="ss-item  ss-text">
         <div class="ss-form-entry">
@@ -407,7 +553,7 @@
                    dir="auto" aria-label="IP  " title="">
 
             <div class="error-message"></div>
-            <div class="required-message">This is a required question</div>
+            <div class="required-message">Этот вопрос обязателен</div>
         </div>
     </div>
 </div>
@@ -424,7 +570,7 @@
                    aria-label="HouseId  " title="">
 
             <div class="error-message"></div>
-            <div class="required-message">This is a required question</div>
+            <div class="required-message">Этот вопрос обязателен</div>
         </div>
     </div>
 </div>
@@ -441,8 +587,8 @@
         <tr>
             <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
                 <label id="ssTestLabel" for="ssTestValue"></label>
-                <input type="text" name="ssTestValue" value="" id="ssTestValue" />
-                <input type="submit" name="continue" value="Продолжить »" id="ss-submit"></td>
+                <input type="text" name="ssTestValue" value="" id="ssTestValue"/>
+                <input type="submit" name="continue" value="Готово" id="ss-submit"></td>
         </tr>
         </tbody>
     </table>

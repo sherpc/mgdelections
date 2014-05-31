@@ -1,4 +1,4 @@
-function log (data) { console.log(data); }
+//function log (data) { console.log(data); }
 
 function last(array) {
     if (array.length)
@@ -6,14 +6,9 @@ function last(array) {
     throw 'Array is empty!';
 }
 
-$(function() {
+function initAddress() {
     var addressInput = $('.m-address');
-    var ipInput = $('.m-ip');
     var houseIdInput = $('.m-house-id');
-
-    $.get('http://freegeoip.net/json/', function (data) {
-        ipInput.val(data.ip);
-    });
 
     addressInput.autocomplete({
         source: function(request, response) {
@@ -26,13 +21,22 @@ $(function() {
             houseIdInput.val(id);
         }
     });
+}
 
+function getIp() {
+    var ipInput = $('.m-ip');
+    $.get('http://freegeoip.net/json/', function (data) {
+        ipInput.val(data['ip']);
+    });
+}
+
+function initCaptcha() {
     var ssForm = $('#'+formID);
 
     var randomInt = Math.floor((Math.random()*100)+1);
-    $('#'+labelName).text('Если вы человек, введите ' + randomInt + ':');
+    $('#'+labelName).text('Пожалуйста, введите ' + randomInt + ':');
 
-    ssForm.submit(function(evt){
+    ssForm.submit(function(){
         if($('#'+testField).val() == randomInt){
             ssForm.attr({'action' : 'https://docs.google.com/forms/d/' + formKey + '/formResponse'});
             return true;
@@ -41,4 +45,21 @@ $(function() {
             return false;
         }
     });
+}
+
+function initWorkflow() {
+    var helpQuestionsBlock = $('.m-help-questions');
+    $('.m-show-help-button').click(function() {
+        helpQuestionsBlock.show();
+    });
+    $('.m-hide-help-button').click(function() {
+        helpQuestionsBlock.hide();
+    });
+}
+
+$(function() {
+    getIp();
+    initAddress();
+    initWorkflow();
+    initCaptcha();
 });
