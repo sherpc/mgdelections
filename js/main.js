@@ -23,11 +23,9 @@ function initAddress() {
     });
 }
 
-function getIp() {
+function setIp(data) {
     var ipInput = $('.m-ip');
-    $.get('http://freegeoip.net/json/', function (data) {
-        ipInput.val(data['ip']);
-    });
+    ipInput.val(data['ip']);
 }
 
 function initCaptcha() {
@@ -58,7 +56,6 @@ function initWorkflow() {
 }
 
 $(function() {
-    getIp();
     initAddress();
     initWorkflow();
     initCaptcha();
